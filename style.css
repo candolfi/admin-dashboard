@@ -202,6 +202,10 @@ input {
 
 .trending-card {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+}
+
+.trending-card>img {
+    padding-right: 10px;
 }
