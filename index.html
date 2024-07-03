@@ -6,70 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
-        <div>
+        <div class="search">
+            <img src="./images/magnify.svg" alt="Search" width="30px" height="30px">
             <input type="text" placeholder="Search..">
         </div>
         <div class="social">
-            <p>HI there,</p>
-            <p>Insert Name (@insert-tag)</p>
+            <div class="social-svg">
+                <img src="./images/account-circle.svg" alt="Account" width="80px" height="80px">
+            </div>
+            <div class="social-text">
+                <p class="social-text-greeting">HI there,</p>
+                <p class="social-text-name">Insert Name (@insert-tag)</p>
+            </div>
         </div>
         <div class="name">
+            <img class="name-svg" src="./images/bell-ring-outline.svg" alt="Alert" width="30px" height="30px">
+            <img class="name-svg" src="./images/account-circle.svg" alt="Account" width="30px" height="30px">
             <p>Name Last-Name</p>
         </div>
-        <div class="new"><button class="header-button">New</button></div>
-        <div class="upload"><button class="header-button">Upload</button></div>
-        <div class="share"><button class="header-button">Share</button></div>
+        <div class="new header-button"><button class="header-button">New</button></div>
+        <div class="upload header-button"><button class="header-button">Upload</button></div>
+        <div class="share header-button"><button>Share</button></div>
     </div>
     <div class="sidebar">
         <div class="sidebar-logo">
             <div>
-                <p>Dashboard</p>
+                <img src="./images/vector-curve.svg" alt="Dashboard" width="50px" height="50px">
+                <p style="font-size: 125%">Dashboard</p>
             </div>
         </div>
         <div class="sidebar-navigation">
             <div>
+                <img src="./images/home.svg" alt="Home" width="30px" height="30px">
                 <p>Home</p>
             </div>
             <div>
+                <img src="./images/card-account-details-outline.svg" alt="Profile" width="30px" height="30px">
                 <p>Profile</p>
             </div>
             <div>
+                <img src="./images/message.svg" alt="Messages" width="30px" height="30px">
                 <p>Messages</p>
             </div>
             <div>
+                <img src="./images/history.svg" alt="History" width="30px" height="30px">
                 <p>History</p>
             </div>
             <div>
+                <img src="./images/note-multiple.svg" alt="Tasks" width="30px" height="30px">
                 <p>Tasks</p>
             </div>
             <div>
+                <img src="./images/human-male-female-child.svg" alt="Community" width="30px" height="30px">
                 <p>Communities</p>
             </div>
         </div>
         <div class="sidebar-branding">
             <div>
+                <img src="./images/cog.svg" alt="Settings" width="30px" height="30px">
                 <p>Settings</p>
             </div>
             <div>
+                <img src="./images/help-box.svg" alt="Support" width="30px" height="30px">
                 <p>Support</p>
             </div>
             <div>
+                <img src="./images/shield-check.svg" alt="Privacy" width="30px" height="30px">
                 <p>Privacy</p>
             </div>
         </div>
     </div>
     <div class="main-content">
         <div class="projects">
-            <div class="project-card">Project 1</div>
-            <div class="project-card">Project 2</div>
-            <div class="project-card">Project 3</div>
-            <div class="project-card">Project 4</div>
-            <div class="project-card">Project 5</div>
-            <div class="project-card">Project 6</div>
+            <div class="project-card">
+                <div>
+                    <p><strong style="color:black">Super Cool Project</strong><br>
+                        Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                        nibh erat, id facilisis felis accumsan nec.
+                    </p>
+                </div>
+                <div class="project-card-svg">
+                    <img src="./images/star-plus-outline.svg" alt="Favourite" width="30px" height="30px">
+                    <img src="./images/eye-plus-outline.svg" alt="Seen" width="30px" height="30px">
+                    <img src="./images/link.svg" alt="Share" width="30px" height="30px">
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <p><strong style="color:black">Less Cool Project</strong><br>
+                        Nullam condimentum ipsum ut lectus vehicula consectetur.
+                        Quisque sed dolor tincidunt, consectetur sapien et , facilisis
+                        dolor. Duis sem purus, dignissim ut sapien in, varius
+                        pellentesque lacus.
+                    </p>
+                </div>
+                <div class="project-card-svg">
+                    <img src="./images/star-plus-outline.svg" alt="Favourite" width="30px" height="30px">
+                    <img src="./images/eye-plus-outline.svg" alt="Seen" width="30px" height="30px">
+                    <img src="./images/link.svg" alt="Share" width="30px" height="30px">
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <p><strong style="color:black">Impossible App</strong><br>
+                        In hac habitasse platea dictumst. Vivamus dictum rutrum arcu,
+                        a placerat velit sagittis id.
+                    </p>
+                </div>
+                <div class="project-card-svg">
+                    <img src="./images/star-plus-outline.svg" alt="Favourite" width="30px" height="30px">
+                    <img src="./images/eye-plus-outline.svg" alt="Seen" width="30px" height="30px">
+                    <img src="./images/link.svg" alt="Share" width="30px" height="30px">
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <p><strong style="color:black">Easy Peasy App</strong><br>
+                        Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna
+                        eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo,
+                        ac bibendum magna tincidunt.
+                    </p>
+                </div>
+                <div class="project-card-svg">
+                    <img src="./images/star-plus-outline.svg" alt="Favourite" width="30px" height="30px">
+                    <img src="./images/eye-plus-outline.svg" alt="Seen" width="30px" height="30px">
+                    <img src="./images/link.svg" alt="Share" width="30px" height="30px">
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <p><strong style="color:black">Ad Blocker</strong><br>
+                        Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus
+                        vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+                    </p>
+                </div>
+                <div class="project-card-svg">
+                    <img src="./images/star-plus-outline.svg" alt="Favourite" width="30px" height="30px">
+                    <img src="./images/eye-plus-outline.svg" alt="Seen" width="30px" height="30px">
+                    <img src="./images/link.svg" alt="Share" width="30px" height="30px">
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <p><strong style="color:black">Money Maker</strong><br>
+                        Praesent convallis, libero quis congue elementum, nunc ante
+                        faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                        Pellentesque mollis nec sem vel aliquam.
+                    </p>
+                </div>
+                <div class="project-card-svg">
+                    <img src="./images/star-plus-outline.svg" alt="Favourite" width="30px" height="30px">
+                    <img src="./images/eye-plus-outline.svg" alt="Seen" width="30px" height="30px">
+                    <img src="./images/link.svg" alt="Share" width="30px" height="30px">
+                </div>
+            </div>
         </div>
         <div class="announcements">
             <div class="announcement-card">
